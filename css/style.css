@@ -31,7 +31,7 @@ header {
     padding: 3vh 5vw;
     align-items: center;
     z-index: 2;
-    /* background-color: rgba(79, 79, 79, 0.304);*/
+    /* background-color: rgba(79, 79, 79, 0.304); */
 }
 
 header #snb {
@@ -46,6 +46,8 @@ header #snb {
 
 header h1 a img{
     width: 10vh;
+    position:absolute;
+    top: 30%;
 }
 
 /* GNB */
@@ -135,24 +137,55 @@ figure .text ul li strong {
     letter-spacing: 1px;
 
 }
-/* GOLDBIRD */
+/* GOLDBAll */
 .goldball {
     background-image: url("../img/goldball.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
     height: 125px;
-    will-change:auto;
+    will-change: auto;
+
     animation-name: fly-cycle;
     animation-timing-function: steps(10);
     animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-delay: -0.5s;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
+
 @keyframes fly-cycle {
-    100% {
-    background-position: -100px 0;
-    }
+    0% {
+		transform: translateX(-10vw);
+	}
+	
+	10% {
+		transform: translateY(20vh) translateX(10vw) ;
+	}
+	
+	20% {
+		transform: translateY(-10vh) translateX(30vw);
+	}
+	
+	30% {
+		transform: translateY(60vh) translateX(50vw);
+	}
+	
+	40% {
+		transform: translateY(30vh) translateX(70vw);
+	}
+	
+	50% {
+		transform: translateY(10vh) translateX(90vw);
+	}
+	
+	60% {
+		transform: translateY(0vh) translateX(110vw);
+	}
+	
+	100% {
+		transform: translateY(0vh) translateX(110vw);
+	}
 }
+
 
 /* FOOTER */
 footer {
