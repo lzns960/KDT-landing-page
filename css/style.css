@@ -249,4 +249,10 @@ footer {
     figure .text p {
         font-size: 10vw;
     }
-};
+    figure .text ul li i {
+        font-size: 2vw;
+    }
+    figure .text ul li strong {
+        font-size: 2vw;
+    }
+}
