@@ -114,8 +114,10 @@ figure .text {
 
 figure .text p {
     font: normal 10vw/15vw  'HarryP' ;
-    color: rgb(218,218,218);
-    text-shadow: 2px 2px 5px silver;
+}
+figure .text p a {
+    color: rgb(209, 167, 62);
+    text-shadow: 3px 4px  brown;
 }
 
 figure .text ul {
