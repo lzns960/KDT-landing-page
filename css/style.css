@@ -143,11 +143,10 @@ figure .text ul li strong {
     background-size: auto 100%;
     background-repeat: no-repeat;
     height: 125px;
-    will-change: auto;
 
     animation-name: fly-cycle;
-    animation-timing-function: steps(10);
-    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);  /*중간 상태들의 전환을 어떤 시간간격으로 진행할지*/
+    animation-iteration-count: infinite; /* 애니메이션 무한반복 */
     animation-duration: 4s;
     animation-delay: 1s;
 }
